@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "kanit";
+}
+
+.header {
+  background-image: url("/pics/premium_photo-1681487769650-a0c3fbaed85a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: rgba(13, 13, 14, 0.5);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+.header .header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header h1 {
+  align-self: center;
+  font-family: "kanit";
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 400;
+}
+.header p {
+  align-self: center;
+  font-family: "kanit";
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+}
+.header .authButtons {
+  margin: 0.5rem;
+}
+.header .authButtons button {
+  padding: 10px;
+  width: 8rem;
+  border-radius: 14px;
+  border: none;
+  margin: 1rem;
+}
+.header .authButtons button:hover {
+  background-color: #C8E6C9;
+  color: #fff;
+}
+
+.navbar {
+  position: absolute;
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  padding: 0.5rem;
+  border: 1.5px solid #fff;
+  border-radius: 16px;
+  margin: 2rem auto;
+  top: 10px;
+  color: #fff;
+}
+.navbar .nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
+.navbar .nav-logo h1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.navbar .nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar .nav-items ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  top: 10px;
+}
+.navbar .nav-items li {
+  list-style-type: none;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 1.5rem;
+  font-size: 18px;
+  font-family: "raleway";
+  color: #fff;
+  font-family: "kanit";
+  cursor: pointer;
+}
+.navbar .nav-items button {
+  padding: 10px;
+  width: 8rem;
+  border-radius: 14px;
+  border: none;
+}
+.navbar .nav-items button:hover {
+  background-color: #C8E6C9;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3rem;
+}
+.about .about-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about h1 {
+  border-bottom: 2px solid #C8E6C9;
+  margin: 1rem;
+}
+.about p {
+  width: 50rem;
+}
+.about img {
+  height: auto;
+  width: 40rem;
+}
+
+.contact {
+  font-family: "kanit";
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contact .contact-header {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2rem;
+}
+.contact .contact-header h1 {
+  font-weight: 400;
+  border-bottom: 2px solid #C8E6C9;
+}
+.contact .contact-items {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  margin: 2rem;
+}
+.contact .contact-items a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer {
+  background-color: #808080;
+  width: 100%;
+  height: 15vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer h1 {
+  font-family: "kanit";
+  width: 100%;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
