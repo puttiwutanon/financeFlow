@@ -1,5 +1,6 @@
 import {React, useState} from 'react'
 import './../../styles.scss'
+import { Link } from 'react-router-dom'
 
 function LandingNav() {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -16,7 +17,9 @@ function LandingNav() {
                     <li>เกี่ยวกับเรา</li>
                     <li>ติดต่อ</li>
                     <li>
-                        <button>log in</button>
+                        <Link to="/login">
+                            <button>log in</button>
+                        </Link>
                     </li>
                 </ul>
             </div>

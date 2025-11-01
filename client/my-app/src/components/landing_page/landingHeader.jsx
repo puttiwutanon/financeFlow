@@ -1,5 +1,6 @@
 import React from 'react'
 import './../../styles.scss'
+import { Link } from 'react-router-dom'
 
 function LandingHeader() {
   return (
@@ -10,8 +11,12 @@ function LandingHeader() {
                 <p>ผู้ช่วยทางการเงินของคุณ</p>
             </div>
             <div className="authButtons">
+              <Link to="/login">
                 <button>log in</button>
+              </Link>
+              <Link to="/signup">
                 <button>sign up</button>
+              </Link>
             </div>
         </div>        
     </>

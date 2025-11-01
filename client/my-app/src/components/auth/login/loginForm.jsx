@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function SignupForm() {
+function LoginForm() {
   return (
     <>
         <div className='authform'>
-            <h1>สมัครเข้าใช้ financeFlow</h1>
+            <h1>เข้าสู่ระบบ financeFlow</h1>
             <form action="" className="authform-email">
                 <div className="text-input">
                     <label htmlFor="">อีเมล</label>
@@ -14,14 +15,15 @@ function SignupForm() {
                     <label htmlFor="">รหัสผ่าน</label>
                     <input type="text" placeholder='กรุณาใส่รหัสผ่าน'/>
                 </div>
-                <button>สมัคร</button>
+                <button>เข้าสู่ระบบ</button>
             </form>
             <div className="authform-google">
-                <button>สมัครโดยgoogle</button>
+                <button>เข้าสู่ระบบโดยgoogle</button>
             </div>
-        </div>
+            <Link to="/signup"><a>ยังไม่เคยสมัครเข้าใช้งาน? สมัครเลยสิ!!!</a></Link>
+        </div>    
     </>
   )
 }
 
-export default SignupForm
+export default LoginForm
