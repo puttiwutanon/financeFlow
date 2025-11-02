@@ -5,6 +5,8 @@ import './index.css'
 import LandingPage from './components/landing_page/landingPage.jsx'
 import LoginPage from './components/auth/login/loginPage.jsx'
 import SignupPage from './components/auth/signup/signupPage.jsx'
+import MainPage from './components/main_page/mainPage.jsx'
+import ProtectedRoute from './components/auth/protectedRoutes.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <SignupPage/>,
+  },
+  {
+    path: "/main_page",
+    element: (
+      <ProtectedRoute>
+        <MainPage/>
+      </ProtectedRoute>
+    )
   }
 ]);
 

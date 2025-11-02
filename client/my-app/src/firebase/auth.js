@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, GoogleAuthProvider, sendEmailVerification, sendPasswordResetEmail, signInWithPopup, updatePassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, sendEmailVerification, sendPasswordResetEmail, signInWithPopup, updatePassword, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "./firebase";
 
 export const doCreateUserWithEmailAndPassword = async(email, password)=>{
@@ -29,3 +29,7 @@ export const doSendEmailVerification = () => {
         url: `${window.location.origin}/home`,
     });
 }
+
+export const doSignInWithEmailAndPassword = (email, password) => {
+  return signInWithEmailAndPassword(auth, email, password);
+};
