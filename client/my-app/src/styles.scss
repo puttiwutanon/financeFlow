@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 *{
     padding: 0%;
@@ -239,4 +242,103 @@
     background-image: url('/pics/premium_photo-1681487769650-a0c3fbaed85a.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.profile-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+.profile-image {
+    position: relative; 
+    overflow: hidden;
+
+    img {
+      width: 120px;
+      height: 120px;
+      background-color: #fff;
+      border-radius: 100px;
+      border: 3px solid #0007;
+      object-fit: cover;
+    }
+
+}
+    button {
+      position: absolute;
+      bottom: -1; // place at bottom
+      right: -1;  // place at right
+      transform: translate(120%, 120%);
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      padding: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+
+      i {
+        font-size: 16px;
+        color: #333;
+      }
+    }
+    .profile-name{
+        h1{
+            align-self: center;
+            font-size: 24px;
+            font-family: 'Kanit', sans-serif;
+        }
+    }
+}
+
+.sidebar{
+    height: 100vh;
+    width: 17%;
+    overflow: hidden;
+    background-color: #F1F5FB;
+    color: #504f4f;
+}
+
+.sidebar-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #808080;
+    ul{
+        margin: 2.5rem;
+    }
+    li{
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            background-color: #347CFF;
+            color: #fff;
+        }
+    }
+}
+
+.settings-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    ul{
+        margin: 0.5rem;
+    }
+    li{
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            background-color: #347CFF;
+            color: #fff;
+        }
+    }    
 }

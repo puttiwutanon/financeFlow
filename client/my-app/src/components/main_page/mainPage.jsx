@@ -1,10 +1,15 @@
 import React from 'react'
 import './../../styles.scss'
+import Sidebar from './sidebar/sidebar'
+import MainContainer from './mainContainer'
 
 function MainPage() {
   return (
     <>
-        <h1>กำลังพัฒนา</h1>
+    <div className="mainpage">
+        <Sidebar/>
+        <MainContainer/>
+    </div>
     </>
   )
 }
