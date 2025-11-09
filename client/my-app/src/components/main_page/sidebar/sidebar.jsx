@@ -4,13 +4,13 @@ import Profile from './profile'
 import SidebarItems from './sidebarItems'
 import Settings from './settings'
 
-function Sidebar() {
+function Sidebar({ onConnectBankClick }) {
   return (
     <>
       <div className="sidebar">
         <Profile/>
         <SidebarItems/>
-        <Settings/>
+        <Settings onConnectBankClick={onConnectBankClick}/>
       </div>
     </>
   )

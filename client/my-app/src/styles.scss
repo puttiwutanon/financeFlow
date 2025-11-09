@@ -342,3 +342,60 @@
         }
     }    
 }
+
+.mainpage{
+    display: flex;
+    flex-direction: row;
+}
+
+.mainContainer{
+    width: 83%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chooseBank{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F5FB;
+    border-radius: 16px;
+    padding: 0.5rem;
+
+    button{
+        padding: 15px;
+        border-radius: 16px;
+        width: 120px;
+        margin: 1.5rem;
+        border: none;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .banksToChoose{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .cancleChooseBank{
+        &:hover{
+            background-color: #cc1100;
+            color: #fff;
+        }
+    }
+    .connectKasikorn{
+        &:hover{
+            background-color: #90EE90;
+        }
+    }
+    .connectKrungsri{
+        &:hover{
+            background-color: #FFFF8F;
+        }
+    }
+}
