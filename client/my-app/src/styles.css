@@ -307,11 +307,11 @@
   border-bottom: 1px solid #808080;
 }
 .sidebar-items ul {
-  margin: 2.5rem;
+  margin: 1rem;
 }
 .sidebar-items li {
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0.5rem;
+  margin: 0.3rem;
   border-radius: 16px;
 }
 .sidebar-items li:hover {
@@ -346,45 +346,61 @@
 }
 
 .mainContainer {
-  width: 83%;
+  width: 85%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.chooseBank {
+.chat-history {
+  height: 30%;
+  border-bottom: 1px solid #808080;
+}
+
+.questionInput {
+  width: 80%;
+  margin-bottom: 2.5rem;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   align-self: center;
-  align-items: center;
-  justify-content: center;
-  background-color: #F1F5FB;
-  border-radius: 16px;
-  padding: 0.5rem;
 }
-.chooseBank button {
-  padding: 15px;
-  border-radius: 16px;
-  width: 120px;
-  margin: 1.5rem;
-  border: none;
-}
-.chooseBank button:hover {
-  cursor: pointer;
-}
-.chooseBank .banksToChoose {
+.questionInput form {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-.chooseBank .cancleChooseBank:hover {
-  background-color: #cc1100;
+.questionInput input {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1.5px solid black;
+  width: 85%;
+  height: 55px;
+  font-family: "Kanit";
+}
+.questionInput button {
+  background-color: #808080;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  align-self: center;
+  border-radius: 14px;
+  margin: 6px;
+}
+.questionInput button i {
   color: #fff;
 }
-.chooseBank .connectKasikorn:hover {
-  background-color: #90EE90;
+.questionInput button:hover {
+  background-color: #347CFF;
 }
-.chooseBank .connectKrungsri:hover {
-  background-color: #FFFF8F;
+
+.mainChat {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-bubbles {
+  flex: 1;
 }/*# sourceMappingURL=styles.css.map */

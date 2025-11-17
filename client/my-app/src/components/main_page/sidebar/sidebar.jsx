@@ -3,14 +3,16 @@ import '../../../styles.scss'
 import Profile from './profile'
 import SidebarItems from './sidebarItems'
 import Settings from './settings'
+import ChatHistory from './chathistory'
 
-function Sidebar({ onConnectBankClick }) {
+function Sidebar() {
   return (
     <>
       <div className="sidebar">
         <Profile/>
         <SidebarItems/>
-        <Settings onConnectBankClick={onConnectBankClick}/>
+        <ChatHistory/>
+        <Settings/>
       </div>
     </>
   )

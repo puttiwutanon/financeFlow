@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Settings({ onConnectBankClick }) {
+function Settings() {
   return (
     <>
       <div className="settings-items">
         <ul>
           <li><i class="fa-solid fa-gear"></i> การตั้งค่า</li>
-          <li onClick={onConnectBankClick}><i class="fa-solid fa-building-columns"></i> เชื่อมต่อธนาคาร</li>
+          <li><i class="fa-solid fa-arrow-right-from-bracket"></i> ออกจากระบบ</li>
         </ul>
       </div>    
     </>

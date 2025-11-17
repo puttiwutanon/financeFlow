@@ -1,11 +1,11 @@
 import React from 'react'
-import ConnectToBank from './connectToBank/connectToBank'
+import MainChat from './mainChatItems/mainChat'
 
-function MainContainer({ showConnectBank, onCancelConnectBank }) {
+function MainContainer() {
   return (
     <>
       <div className="mainContainer">
-        {showConnectBank && <ConnectToBank onCancelConnectBank={onCancelConnectBank} />}        
+        <MainChat/>
       </div>
     </>
   )
