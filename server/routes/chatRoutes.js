@@ -4,6 +4,7 @@ import { askGemini } from "./ML_models/geminiClient.js";
 const router = express.Router();
 
 router.post("/", async (req, res) => {
+  console.log("REQ BODY:", req.body);
   const { question } = req.body;
 
   if (!question) {

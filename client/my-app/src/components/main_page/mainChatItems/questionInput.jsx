@@ -6,11 +6,13 @@ function QuestionInput() {
   async function sendMessage(e) {
     e.preventDefault();                 
 
-    const res = await fetch("http://localhost:5000/api/chat", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ question: input }),   
-    });
+  const res = await fetch("http://localhost:5000/api/chat", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ question: input }), 
+  });
 
     const data = await res.json();
     console.log("Gemini answer:", data.answer);    
